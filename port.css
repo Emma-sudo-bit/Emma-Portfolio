@@ -39,7 +39,7 @@
 
 h1 {
     margin-top: 70px;
-    margin-left: 120px;
+    margin-left:8px;
     color: #333;
     font-size: 50px;
     font-family: 'Lora', serif;
@@ -53,9 +53,9 @@ h1.centered {
 }
 
 .Image{
-    width: 300px;
+    width: 400px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     position: fixed;
     top: 110px;
     right: 20px;
@@ -84,6 +84,7 @@ body {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
+    
 }
 
 .skills-column ul, .tools-column ul {
@@ -93,7 +94,7 @@ body {
 
 .skills-column li, .tools-column li {
     padding: 1px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #FFE4A1;
     list-style: none;
 }
 
@@ -101,4 +102,124 @@ body {
     content: "★ ";
     color: #97322D;
     margin-right: 8px;
+}
+.centered-bold {
+    text-align: center;
+    font-weight: bold;
+}
+.centered-bold {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    margin-bottom:0px;
+    margin-top: 10px
+}
+.star-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.star-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+   color: #0e0a0a;
+}
+
+.star-list li::before {
+  content: "★";
+  color: #97322D;
+  position: absolute;
+  left: 0;
+}
+.about-me {
+font-family: 'Lora', serif;
+font-weight: 700;
+font-size: 20px;
+color: #0e0a0a;
+margin-bottom: 20px;
+text-align: left;
+}
+
+.bottom-right-img {
+    position: relative;
+    bottom: 90px;
+    right: -800px;
+    width: 200px;
+    height: auto;
+}
+.h2-edit{
+    text-align:left;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.hello{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #3d4806;
+    margin-bottom: -20px;
+    font-style: italic;
+
+}
+.intro{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0e0a0a;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    text-align: left;
+}
+.Hi{
+    width: 50px;
+    height: auto;
+    border-radius: 20px;
+    position: fixed;
+    top: 155px;
+    left:102px;
+}
+/* Projects Section */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+
+.project-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+.rectangle {
+  width: 350px;  
+  height: 200px;
+  background-color: #AB7743;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Animation */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card:hover .rectangle {
+  background-color: #925f32; /* darker shade for hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card p {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 16px;
 }
